@@ -31,12 +31,11 @@ public class RicksyBusiness
     public static void main(String[] args)
     {
         System.out.println();
-        /*
-         *//**
-     * Crea una tarjeta de crédito para Abradolph.
+
+/*     * Crea una tarjeta de crédito para Abradolph.
      * Como es una AndromedanExpress
-     * el crédito inicial es de 3000 EZIS
-     *//*
+     * el crédito inicial es de 3000 EZIS  */
+     //todo mirar lo de crédito inicial
 
         CreditCard abradolph = new CreditCard("Abradolph Lincler", "4916119711304546");
 
@@ -44,7 +43,7 @@ public class RicksyBusiness
                 "===================="        );
         System.out.println(abradolph);
 
-        *//**
+        /**
      * Construye el componente de reserva de Ovnis.
      * Recibe el objeto tarjeta de crédito del invitado/a
      * en el método dispatch(card)
@@ -59,6 +58,7 @@ public class RicksyBusiness
         // Da de alta en la flota de ovnis 2 UFOS.
 
         String[] ufosID = { "unx", "dox" };
+
         for (String ovni : ufosID) {
             ufosPark.add(ovni);
         }
