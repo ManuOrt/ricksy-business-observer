@@ -57,7 +57,7 @@ public class RicksyBusiness
 
         // Da de alta en la flota de ovnis 2 UFOS.
 
-        String[] ufosID = { "unx", "dox" };
+        String[] ufosID = {"unx", "dox"};
 
         for (String ovni : ufosID) {
             ufosPark.add(ovni);
@@ -165,7 +165,7 @@ public class RicksyBusiness
      * Para ello, crea el componente receptivo
      * y registra (añade) los componentes UfosPark
      * y CrystalDispatcher al receptivo
-     *//*
+     */
 
         Receptivo receptivo = new Receptivo();
         receptivo.registra(packExpender);
@@ -208,7 +208,7 @@ public class RicksyBusiness
         mostrarReserva(morty, packExpender, ufosPark);
 
 
-        *//**
+        /**
      * A por el 10!!
      * Wubba lubba dub dub!!
      *
@@ -244,13 +244,13 @@ public class RicksyBusiness
         for (CreditCard card: cards) {
             System.out.println(card);
             System.out.println();
-        }
+        }*/
     }
 
     private static void mostrarReserva(CreditCard card, CrystalExpender expender, UfosPark ufos) {
         System.out.println(card);
-        System.out.println("Packs: " + expender.stock());
-        System.out.println("Ovni: " + ufos.getUfoOf(card.number()));
-    }*/
+        System.out.println("Packs: " + expender.getStock());
+        System.out.println("Ovni: " + ufos.getUfoOf(card.getNumber()));
     }
+
 }

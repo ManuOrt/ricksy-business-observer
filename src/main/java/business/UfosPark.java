@@ -53,16 +53,19 @@ public class UfosPark implements guestDispatcher
 
     String getUfoOf(String creditNumber){
         //tenemos que mirar en el mapa, que ovni tiene asignado el creditNumber
-        //
+        //ufo1 -> 1231231   12345
+        //ufo2 - null ==
+        //ufo3 - 12345
+
         if (mFlota.containsValue(creditNumber)){
             for (Map.Entry<String,String> nombreOvni : mFlota.entrySet()){
-                if (nombreOvni.getValue().equals(creditNumber)){
+                if (nombreOvni.getValue() == creditNumber){
                     return nombreOvni.getKey();
                 }
             }
         }
 
-        return " Este credit number no tiene ningún UFO asignado";
+        return " Este credit number no tiene ningun UFO asignado";
     }
 
     public String returnFreeOvnis()
@@ -115,7 +118,7 @@ public class UfosPark implements guestDispatcher
                 lCardsNum.add(checkCardNum.getValue()); //Si no es nulo metemos el valor en la lista donde guardamos los card numbers
             }
         }
-        
+
         return lCardsNum;
 /*
         return mFlota.values();*///todo mirar si nos devuelve tmb los nulls
