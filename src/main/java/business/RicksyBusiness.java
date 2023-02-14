@@ -220,11 +220,11 @@ public class RicksyBusiness
      * Hay 100 RickMenús y su precio es de 10 EZIs.
      * Muestra el total de pedidos y la lista de
      * invitados/as (numero de tarjeta) que han hecho un pedido.
-     *//*
+     */
 
         // tu código aquí
 
-        RickMenuDispatcher MenuDispatcher = new RickMenuDispatcher();
+        RickManuDispatcher MenuDispatcher = new RickManuDispatcher();
 
         receptivo.registra(MenuDispatcher);
 
@@ -244,7 +244,7 @@ public class RicksyBusiness
         for (CreditCard card: cards) {
             System.out.println(card);
             System.out.println();
-        }*/
+        }
     }
 
     private static void mostrarReserva(CreditCard card, CrystalExpender expender, UfosPark ufos) {

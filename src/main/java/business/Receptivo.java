@@ -5,7 +5,7 @@ import java.util.*;
 public class Receptivo
 {
     Set<guestDispatcher> lDispatch = new HashSet<>(); //El set para que no se repitan
-
+ 
     Receptivo()
     {}
 
