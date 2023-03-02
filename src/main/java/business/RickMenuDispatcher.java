@@ -3,14 +3,35 @@ package business;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RickManuDispatcher implements guestDispatcher
+public class RickMenuDispatcher implements guestDispatcher
 {
     private int stock = 100;
     private double precio = 10d;
 
+    public RickMenuDispatcher(int stock, double precio)
+    {
+        this.stock = stock;
+        this.precio = precio;
+    }
+
     private List<String> lCompraMenu = new ArrayList<>();
 
-    public RickManuDispatcher()
+    public List<String> getlCompraMenu()
+    {
+        return lCompraMenu;
+    }
+
+    public int getStock()
+    {
+        return stock;
+    }
+
+    public double getPrecio()
+    {
+        return precio;
+    }
+
+    public RickMenuDispatcher()
     {}
 
     @Override

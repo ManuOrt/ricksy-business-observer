@@ -224,7 +224,7 @@ public class RicksyBusiness
 
         // tu código aquí
 
-        RickManuDispatcher MenuDispatcher = new RickManuDispatcher();
+        RickMenuDispatcher MenuDispatcher = new RickMenuDispatcher();
 
         receptivo.registra(MenuDispatcher);
 

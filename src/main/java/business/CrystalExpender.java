@@ -29,7 +29,7 @@ public class CrystalExpender implements guestDispatcher
         return sb.toString();
     }
 
-    int getStock()
+    public int getStock()
     {
         return this.stock;
     }
